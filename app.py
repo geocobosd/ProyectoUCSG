@@ -10,7 +10,7 @@ st.sidebar.title("Parámetros")
 
 st.sidebar.image("LogoPhyton.png")
 
-modulo = st.selectbox("seleccione un módulo", [ "Modulo 1"] , [ "Modulo 2"] , [ "Modulo 3"])
+modulo = st.sidebar.selectbox("seleccione un módulo", [ "Modulo 1"] , [ "Modulo 2"] , [ "Modulo 3"])
 
 if modulo == "Modulo 1":    
     uploaded_files = st.file_uploader(
@@ -19,8 +19,7 @@ if modulo == "Modulo 1":
     for uploaded_file in uploaded_files:
         df = pd.read_csv(uploaded_file)
         st.write(df)
-        
-elif modulo == "Modulo 3"
+elif modulo == "Modulo 3":
     monto = st.number_input("Ingrese el monto:", min_value = 0 , max_value = 10000, value=1000)
     interes = st.number_input("Ingrese el interes:",min_value = 0.0 , max_value = 1.0, value=0.10)
     anios = st.number_input("Ingrese el número de años del prestamo:",value=1)
