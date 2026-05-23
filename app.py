@@ -27,6 +27,6 @@ elif modulo == "Modulo 3"
     numero_pagos = st.number_input("Ingrese el número pagos anuales:" , value = 12)
     cuota = lf.cuota_prestamo(monto, interes,anios,numero_pagos)
     st.write("Su cuota mensual es: ",cuota)
-else
+else:
      st.write("se encuentra en el modulo 3")
 
