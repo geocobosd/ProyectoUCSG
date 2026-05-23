@@ -10,7 +10,7 @@ st.sidebar.title("Parámetros")
 
 st.sidebar.image("LogoPhyton.png")
 
-modulo = st.sidebar.selectbox("seleccione un módulo", [ "Modulo 1"] , [ "Modulo 2"] , [ "Modulo 3"])
+modulo = st.sidebar.selectbox("Seleccione un módulo", ["Módulo 1", "Módulo 2", "Módulo 3"] )
 
 if modulo == "Modulo 1":    
     uploaded_files = st.file_uploader(
